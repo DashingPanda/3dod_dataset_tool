@@ -26,7 +26,7 @@ def main():
     # split the files into 5 parts and write into a .txt file
     n = len(files) // 1
     remainder = len(files) % 1
-    output_folder = os.path.join('/mnt/data_cfl/Projects/3dod-dataset-tools/output/common', dataset)
+    output_folder = os.path.join('./output/common', dataset)
     print(f'output_folder: {output_folder}')
     os.makedirs(output_folder, exist_ok=True)
     for i in range(1):

@@ -121,7 +121,7 @@ def retrieve_label_files(label_dir: str, dataset: str) -> list:
     dataset or similar datasets where label files are organized in a nested directory structure.
     """
 
-    assert dataset in ['rope3d', 'rcooper', 'dairv2x', 'dg3d'], f"Dataset {dataset} is not supported."
+    assert dataset in ['rope3d', 'rcooper', 'dairv2x', 'dg3d', 'a9'], f"Dataset {dataset} is not supported."
 
     if dataset == 'rope3d':
         label_files = list()
@@ -142,6 +142,14 @@ def retrieve_label_files(label_dir: str, dataset: str) -> list:
         return label_files
 
     elif dataset == 'dg3d':
+        label_files = list()
+        for root, dirs, files in os.walk(label_dir):
+            for file in files:
+                if file.endswith('.json'):
+                    label_files.append(os.path.join(root, file))
+        return label_files
+    
+    elif dataset == 'a9':
         label_files = list()
         for root, dirs, files in os.walk(label_dir):
             for file in files:
