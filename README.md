@@ -4,8 +4,8 @@
 # Introduction
 This repo contains tools for working with the 3D Object Detection Dataset. 
 
-<img src="https://gitlab.deepglint.com/fenglianchen/3dod-dataset-tools/-/blob/main/examples/rcooper/1693909042.081970.jpg" width="500">
-<img src="https://gitlab.deepglint.com/fenglianchen/3dod-dataset-tools/examples/rcooper/1693909063.315255.jpg" width="500">
+<img src="examples/rcooper/1693909042.081970.jpg" width="500">
+<img src="examples/rcooper/1693909063.315255.jpg" width="500">
 
 
 
